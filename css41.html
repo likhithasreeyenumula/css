@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>css gallery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            .container{
+                display: grid;
+                grid-template-columns: [start sidebar-start]3fr[sidebar-end content-start]5fr[content-end ads-starts]3fr[end ads-end];
+                grid-template-rows: [start header-start]auto[header-end content-start]auto[content-end footer-start]auto[end footer-end];
+            }
+            .header{
+                grid-column: start/end;
+                grid-row:start/header-end;
+            }
+            .articles{
+                grid-column: start/sidebar-end;
+                grid-row:header-end/footer-start;
+            }
+            .content{
+                grid-column: content-start/content-end;
+                grid-column: row-start/content-end;
+            }
+            .footer{
+                grid-column:start/end;
+                grid-row: footer-start/footer-end;
+            }
+            .ads{
+                grid-column:ads-start/end;
+                grid-row: header-start/footer-end;
+            }
+        </style>
+    </head>
+    <body >
+        <div class="container">
+            <div class="item header">header</div>
+            <div class="item content">content</div>
+            <div class="item articles">articles</div>
+            <div class="item footer">footer</div>
+            <div class="item ads">ads</div>
+        </div>
+    </body>
+</html>

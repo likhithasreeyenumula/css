@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>css translate-2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            .dv1{
+                width: 200px;
+                height: 200px;
+                background-color: rgb(237, 73, 163);
+                position: relative;                
+                margin-left: 50px;
+                border-radius: 50%;
+                position: relative;
+                animation-name: mv;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-delay: 0s;
+            }
+            @keyframes mv{
+                from{
+                    left:0;
+                }
+                to{
+                    left:50%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dv1">
+            
+        </div>
+    </body>
+</html>

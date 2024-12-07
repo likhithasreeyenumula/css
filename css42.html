@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>pro-2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            .container{
+                display: grid;
+                grid-template-columns: [start sidebar-start]3fr[sidebar-end content-start]5fr[content-end ads-starts]3fr[end ads-end];
+                grid-template-rows: [start header-start]auto[header-end content-start]auto[content-end footer-start]auto[end footer-end];
+            }
+            .header{
+                grid-column: start/end;
+                grid-row:start/header-end;
+            }
+            .articles{
+                grid-column: start/sidebar-end;
+                grid-row:header-end/footer-start;
+            }
+            .content {
+                grid-column: content-start/content-end;
+                grid-row: content-start/content-end;
+            }
+            .footer{
+                grid-column:start/end;
+                grid-row: footer-start/footer-end;
+            }
+            
+            .ads{
+                grid-column:ads-start/end;
+                grid-row: header-start/footer-end;
+            }
+        </style>
+    </head>
+    <body >
+        <div class="container">
+            <div class="item header">
+                <center><img src="file://c:/intenship/css/img/logo.gif"></center>
+            </div>
+            <div name="c">
+                <iframe name="main-content"></iframe>
+                </div>
+            <div class="item articles">
+                <a href="http://doraemon.com.tr/en/" target="c">
+                    doremon
+                </a><br><br>
+                <a href="https://shin-ei-animation.jp/en/works/shinchan/" target="c">
+                    shinchan
+                </a><br><br>
+                <a href="https://xilam.com/en/media/oggy-the-cockroaches/?doing_wp_cron=1733120206.0659010410308837890625" target="c">
+                    oggy and the cockroaches
+                </a><br><br>
+                <a href="EgNpbWciCm1vdHUgcHR1bHUyDRAAGIAEGLEDGEMYigUyBhAAGAcYHjIGEAAYBxgeMggQABiABBixAzIGEAAYBxgeMgUQABiABDIIEA
+                AYgAQYsQMyBRAAGIAEMggQABiABBixAzIKEAAYgAQYQxiKBUi3_AFQ8xdYqvcBcAN4AJABApgBAKABAKoBALgBA8gBAPgBAZgCA6ACBpgDAIgGAZIHATOgBwA">
+                    motu patlu
+                </a><br><br>
+                <a href="https://www.google.com/search?q=shiva+cartoon&sca_esv=aec6f88e2ecf38c3&rlz=1C1ONGR_enIN1044IN104
+                4&udm=2&biw=1532&bih=480&sxsrf=ADLYWILmcDxXPZtJNlRsmv7b3OMuz30Clw%3A1733113974732&ei=djhNZ7u0LJaxseMPlqOd8
+                QQ&oq=s&gs_lp=EgNpbWciAXMqAggEMgQQIxgnMgQQIxgnMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhD
+                GIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgsQABiABBixAxiDAUjHV1C5EljDL3ADeACQAQCYAbMBoAGOBaoBAz
+                AuNLgBA8gBAPgBAZgCB6ACogWoAgrCAg0QABiABBixAxhDGIoFwgIGEAAYBxgewgIOEAAYgAQYsQMYgwEYigXCAggQABiABBixA8ICBRAA
+                GIAEwgIHECMYJxjqApgDAogGAZIHAzMuNKAHnho&sclient=img" target="c">
+                    Shiva
+                </a>
+            </div>
+            <div class="item footer">
+                <marquee>
+                    <a href="https://www.google.com/search?q=harry+potter+images&sca_esv=aec6f88e2ecf38c3&rlz=
+                    1C1ONGR_enIN1044IN1044&udm=2&biw=1532&bih=480&sxsrf=ADLYWIKrwgYa6vx0HfMrhaXqx-t362XxaA%3A1
+                    733114085249&ei=5ThNZ6b2Dv6XseMP2IqxyQI&oq=h&gs_lp=EgNpbWciAWgqAggBMgQQIxgnMgQQIxgnMgoQABiA
+                    BBhDGIoFMggQABiABBixAzIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATIIEAAYgAQYsQMyCBAAGIA
+                    EGLEDMg4QABiABBixAxiDARiKBUjkLVCJC1iJC3ABeACQAQCYAaQBoAGkAaoBAzAuMbgBA8gBAPgBAZgCAqACrAGoAgr
+                    CAgcQIxgnGOoCmAMFkgcDMS4xoAeVCA&sclient=img" target="c">
+                     harry potter
+                    </a>
+                </marquee>
+            </div>
+            <div class="item ads">
+                <a href="EgNpbWciBGNob3QqAggAMgwQABiABBhDGIoFGAoyChAAGIAEGEMYigUyChAAGIAEGEMYigUyDBAAGIAEGEMYigUY
+                CjIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBUiQPVDdG1ihKnADeACQA
+                QCYAbYBoAGiBaoBAzAuNLgBA8gBAPgBAZgCB6ACtwXCAhAQABiABBixAxhDGIMBGIoFwgIGEAAYBxgewgINEAAYgAQYsQMYQxi
+                KBcICCxAAGIAEGLEDGIMBwgIIEAAYgAQYsQPCAgQQIxgnwgIPEAAYgAQYsQMYQxiKBRgKmAMAiAYBkgcDMy40oAefGA" target="c">
+                    chota bheem
+                </a><br><br>
+                <a href="https://www.google.com/search?sca_esv=aec6f88e2ecf38c3&rlz=1C1ONGR_enIN1044IN1044&sxsrf=A
+                DLYWILsPM8B2VZaQO4cDcR650J35mibdg:1733113870213&q=new+ninja+hattori&uds=ADvngMjcH0KdF7qGWtwTBrP0nt7
+                d5Va50E0UzczXq8yL5f8lNVlo3nu8lLjjmjmOPvgp9Jtk7qE002ciwRY2Ww5mXUMuJsibcsra1VNxTsnkGSu-54mWuLIvGRPbXp
+                JcupayRfkEDlA4JcrgdWwH6bIAOmN1Th_3cw&udm=2&sa=X&ved=2ahUKEwjSldukoIiKAxX2TGwGHfsGFL4QxKsJegUIogEQAQ&
+                ictx=0&biw=1532&bih=480&dpr=1.25" target="c">
+                    ninja hattori
+                </a><br><br>
+                <a href="https://www.google.com/search?sca_esv=aec6f88e2ecf38c3&rlz=1C1ONGR_enIN1044IN1044&sxsrf=ADL
+                YWII8dOvPVhqRDmB0vPkH_dafrLcUAQ:1733114074532&q=clubhouse+wallpaper+high+resolution+mickey+mouse+club
+                house+clipart&uds=ADvngMjcH0KdF7qGWtwTBrP0nt7dk1EeM88ACLjBIW2T_i1pLM2KkWHKOy2bQ3zGna4o5eoAbivyTqhS_E2
+                R3aptIR_2RvHqiKUULXtliUpnCfpqV_vQUpoL3YCAL9GMe4So9p2JFF7C0uso2xJB0_W0D2_cAwkT20DhdXTymA3CLBi8TIiKqXi8
+                RXDKLExn4DIHa8DtOQP58cXJdZ7CpmiAOBme07Cw4o4bK20Nk_1Q8C0wcqbyfzT-JIiC690ZlLqDDrcY_r2OnE3sG_dDq3GuuUT6HP
+                VlNw&udm=2&sa=X&ved=2ahUKEwi085GGoYiKAxXuS2wGHX6WI9sQxKsJegQIChAB&ictx=0&biw=1532&bih=480&dpr=1.25" target="c">
+                    mickey mouse
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

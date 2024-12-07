@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>css gallery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{
+                background: #ee1818;
+            }
+            .container{
+                padding:0.5rem;
+                display:grid;
+                background: #ffffff;
+                gap:20px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-auto-columns: 50px;
+                grid-auto-flow: column;
+            }
+            .item
+            {
+                background:#b8b8b8;
+                border:0.5px solid #000000;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body class="container">
+        <div class="item"><p>one</p></div>
+        <div class="item"><p>two</p></div>
+        <div class="item"><p>three</p></div>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>pro-2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            .container{
+                display: grid;
+                grid-template-columns: [start sidebar-start]3fr[sidebar-end content-start]5fr[content-end ads-starts]3fr[end ads-end];
+                grid-template-rows: [start header-start]auto[header-end content-start]auto[content-end footer-start]auto[end footer-end];
+                
+            }
+            .header{
+                grid-column: start/end;
+                grid-row:start/header-end;
+                background-color: aqua;
+            }
+            .articles{
+                grid-column: start/sidebar-end;
+                grid-row:header-end/footer-start;
+                background-color: rgb(14, 253, 90);
+            }
+            .content {
+                grid-column: content-start/content-end;
+                grid-row: content-start/content-end;
+                background-color: hotpink;
+                width:1350px;
+            }
+            iframe{
+                width:1350px;
+                height:550px;
+            }
+            .footer{
+                grid-column:start/end;
+                grid-row: footer-start/footer-end;
+                height: 75px;
+                background-color: red;
+            }
+            
+            .ads{
+                grid-column:ads-start/end;
+                grid-row: header-start/footer-end;
+                background-color: rgb(245, 249, 32);
+                width: 75px;
+            }
+        </style>
+    </head>
+    <body >
+        <div class="container">
+            <div class="item header">
+                <center><img src="./img/logo.gif"></center>
+            </div>
+            <div class="content">
+            <iframe name="c"></iframe>
+        </div>
+            <div class="item articles">
+                <a href="http://doraemon.com.tr/en/" target="c">
+                    <img src="E:/Likhitha/IT/img/dor.jpg" width="100px">
+                </a><br><br>
+                <a href="https://shin-ei-animation.jp/en/works/shinchan/" target="c">
+                    <img src="E:/Likhitha/IT/img/shin.jpg" width="100px">
+                </a><br><br>
+                <a href="https://xilam.com/en/media/oggy-the-cockroaches/?doing_wp_cron=1733120206.0659010410308837890625" target="c">
+                    <img src="E:/Likhitha/IT/img/oac.jpg" width="100px">
+                </a><br><br> 
+                <a href="https://www.chhotabheem.com/movies/" target="c">
+                    <img src="E:/Likhitha/IT/img/cb.jpg" width="100px">
+                </a><br><br>
+                
+                <a href="https://www.disney.in/mickey-mouse-true-original" target="c">
+                    <img src="E:/Likhitha/IT/img/mm.jpg" width="100px">
+                </a>               
+            </div>
+            <div class="item ads">
+                <marquee width="250px" direction="up" height="600px" scrollamount="10">
+                    <a href="https://www.chhotabheem.com/movies/" target="c">
+                        <img src="E:/Likhitha/IT/img/cb.jpg" width="75px">
+                    </a><br><br>
+                    
+                    <a href="https://www.disney.in/mickey-mouse-true-original" target="c">
+                        <img src="E:/Likhitha/IT/img/mm.jpg" width="75px">
+                    </a><br><br>
+                    <a href="http://doraemon.com.tr/en/" target="c">
+                        <img src="E:/Likhitha/IT/img/dor.jpg" width="75px">
+                    </a><br><br>
+                    <a href="https://shin-ei-animation.jp/en/works/shinchan/" target="c">
+                        <img src="E:/Likhitha/IT/img/shin.jpg" width="75px">
+                    </a><br><br>
+                    <a href="https://xilam.com/en/media/oggy-the-cockroaches/?doing_wp_cron=1733120206.0659010410308837890625" target="c">
+                        <img src="E:/Likhitha/IT/img/oac.jpg" width="75px">
+                    </a><br><br>  
+                </marquee>
+            </div>
+            <div class="item footer">
+                <marquee scrollamount="15">
+                    <a href="https://www.startingharrypotter.com/" target="c">
+                        <img src="E:/Likhitha/IT/img/hpps.jpg" width="300px" height="75px">
+                        <img src="E:/Likhitha/IT/img/hpcs.jpg" width="300px" height="75px">
+                        <img src="E:/Likhitha/IT/img/hpgf4.jpg" width="300px" height="75px">
+                        <img src="E:/Likhitha/IT/img/hp3.jpg" width="300px" height="75px">
+                        <img src="E:/Likhitha/IT/img/hp5.jpg" width="300px" height="75px">
+                        <img src="E:/Likhitha/IT/img/hp6.jpg" width="300px" height="75px">
+                        <img src="E:/Likhitha/IT/img/hp7.jpg" width="300px" height="75px">
+                    </a>
+                </marquee>
+            </div>
+            
+        </div>
+    </body>
+</html>

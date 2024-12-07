@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>css translate-2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            .dv1{
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                position: relative;                
+                margin-left: 400px;
+                margin-top: 200px;
+                border-radius: 50%;
+                position: relative;
+                animation: test 10s linear 0s infinite alternate;
+            }
+            @keyframes test{
+                0%{left:0px;background-color: yellow;}
+                10%{left:50px;background-color: red;}
+                25%{left:100px;background-color: orange;}
+                25%{left:100px;background-color: rgb(17, 255, 0);}
+                25%{left:100px;background-color: rgb(0, 191, 255);}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dv1">            
+        </div>
+    </body>
+</html>
